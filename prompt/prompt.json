@@ -1,0 +1,65 @@
+{
+    "movie_tagging":{
+        "prompt": "Which tag does this movie relate to among the following tags? Just answer with the tag name without further explanation. tags: [sci-fi, based on a book, comedy, action, twist ending, dystopia, dark comedy, classic, psychology, fantasy, romance, thought-provoking, social commentary, violence, true story]\n description: {} tag:",
+        "full_prompt": "Which tag does this movie relate to among the following tags? Just answer with the tag name without further explanation. tags: [sci-fi, based on a book, comedy, action, twist ending, dystopia, dark comedy, classic, psychology, fantasy, romance, thought-provoking, social commentary, violence, true story]\n description: {} tag: {}",
+        "retrieval_history": "description: {description} tag: {tag}\n",
+        "retrieval_query": "Which tag does this movie relate to among the following tags? Just answer with the tag name without further explanation.\n description: {description}",
+        "retrieval_query_wokey": "Which tag does this movie relate to among the following tags? Just answer with the tag name without further explanation.\n description: {}",
+        "OPPU_input": "Which tag does this movie relate to among the following tags? Just answer with the tag name without further explanation. tags: [sci-fi, based on a book, comedy, action, twist ending, dystopia, dark comedy, classic, psychology, fantasy, romance, thought-provoking, social commentary, violence, true story]\n description: {description} tag:",
+        "OPPU_full": "Which tag does this movie relate to among the following tags? Just answer with the tag name without further explanation. tags: [sci-fi, based on a book, comedy, action, twist ending, dystopia, dark comedy, classic, psychology, fantasy, romance, thought-provoking, social commentary, violence, true story]\n description: {description} tag: {tag}"
+    },
+    "citation":{
+        "prompt": "Identify the most relevant reference for the listed publication by the researcher. Select the reference paper that is most closely related to the researcher's work.\npaper title: {} reference:",
+        "full_prompt": "Identify the most relevant reference for the listed publication by the researcher. Select the reference paper that is most closely related to the researcher's work.\npaper title: {} reference: {}",
+        "retrieval_history": "paper title: {title}\n",
+        "retrieval_query": "Identify the most relevant reference for the listed publication by the researcher. Select the reference paper that is most closely related to the researcher's work. Please respond with only the number that corresponds to the reference.\npaper title: {title}",
+        "retrieval_query_wokey": "Identify the most relevant reference for the listed publication by the researcher. Select the reference paper that is most closely related to the researcher's work. Please respond with only the number that corresponds to the reference.\npaper title: {}",
+        "OPPU_input": "paper title: {title} reference:",
+        "OPPU_full": "paper title: {title} reference: {citation}"
+    },
+    "news_categorize":{
+        "prompt": "Which category does this article relate to among the following categories? Just answer with the category name without further explanation. categories: [travel, education, parents, style & beauty, entertainment, food & drink, science & technology, business, sports, healthy living, women, politics, crime, culture & arts, religion]\n article: {} category:",
+        "full_prompt": "Which category does this article relate to among the following categories? Just answer with the category name without further explanation. categories: [travel, education, parents, style & beauty, entertainment, food & drink, science & technology, business, sports, healthy living, women, politics, crime, culture & arts, religion]\n article: {} category: {}",
+        "retrieval_history": "article: {text} category: {category}\n",
+        "retrieval_query": "Which category does this article relate to among the following categories? arcicle: {text}",
+        "retrieval_query_wokey": "Which category does this article relate to among the following categories? arcicle: {}",
+        "OPPU_input": "Which category does this article relate to among the following categories? Just answer with the category name without further explanation. categories: [travel, education, parents, style & beauty, entertainment, food & drink, science & technology, business, sports, healthy living, women, politics, crime, culture & arts, religion]\n article: {text} category:",
+        "OPPU_full": "Which category does this article relate to among the following categories? Just answer with the category name without further explanation. categories: [travel, education, parents, style & beauty, entertainment, food & drink, science & technology, business, sports, healthy living, women, politics, crime, culture & arts, religion]\n article: {text} category: {category}"
+    },
+    "news_headline":{
+        "prompt": "Generate a headline for the following article.\narticle: {} headline:",
+        "full_prompt": "Generate a headline for the following article.\narticle: {} headline: {}",
+        "retrieval_history": "article: {text} headline: {title}\n",
+        "retrieval_query": "Generate a headline for the following article: {text}",
+        "retrieval_query_wokey": "Generate a headline for the following article: {}",
+        "OPPU_input": "Generate a headline for the following article.\n article: {text} headline:",
+        "OPPU_full": "Generate a headline for the following article.\n article: {text} headline: {title}"
+    },
+    "product_rating":{
+        "prompt": "What is the score of the following review on a scale of 1 to 5? just answer with 1, 2, 3, 4, or 5 without further explanation. review: {}\n score:",
+        "full_prompt": "What is the score of the following review on a scale of 1 to 5? just answer with 1, 2, 3, 4, or 5 without further explanation. review: {}\n score: {}",
+        "retrieval_history": "review: {text} score: {score}\n",
+        "retrieval_query": "What is the score of the following review on a scale of 1 to 5? review: {text}",
+        "retrieval_query_wokey": "What is the score of the following review on a scale of 1 to 5? review: {}",
+        "OPPU_input": "What is the score of the following review on a scale of 1 to 5? just answer with 1, 2, 3, 4, or 5 without further explanation. review: {text}\n score:",
+        "OPPU_full": "What is the score of the following review on a scale of 1 to 5? just answer with 1, 2, 3, 4, or 5 without further explanation. review: {text}\n score: {score}"
+    },
+    "scholarly_title": {
+        "prompt": "Generate a title for the following abstract of a paper.\n abstract: {} title:",
+        "full_prompt": "Generate a title for the following abstract of a paper.\n abstract: {} title: {}",
+        "retrieval_history": "abstract: {abstract} title: {title}\n",
+        "retrieval_query": "Generate a title for the following abstract of a paper: {abstract}",
+        "retrieval_query_wokey": "Generate a title for the following abstract of a paper: {}",
+        "OPPU_input": "Generate a title for the following abstract of a paper.\n abstract: {abstract} title:",
+        "OPPU_full": "Generate a title for the following abstract of a paper.\n abstract: {abstract} title: {title}"
+    },
+    "tweet_paraphrase":{
+        "prompt": "Paraphrase the following text into tweet without any explanation before or after it.\n text: {} tweet:",
+        "full_prompt": "Paraphrase the following text into tweet without any explanation before or after it.\n text: {} tweet: {}",
+        "retrieval_history": "tweet: {text}\n",
+        "retrieval_query": "Paraphrase the following text into tweet without any explanation before or after it: {text}",
+        "retrieval_query_wokey": "Paraphrase the following text into tweet without any explanation before or after it: {}",
+        "OPPU_input": "tweet:",
+        "OPPU_full": "tweet: {text}"
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "movie_tagging":{
+        "profile_prompt": "Look at the following past movies this user has watched and determine the most popular tag they labeled. Answer in the following form: most popular tag: <tag>. User History: {} Answer:",
+        "retrieval_history": "description: {description} tag: {tag}"
+    },
+    "citation":{
+        "profile_prompt": "Write a summary, in English, of the research interests and topics of a researcher who has published the following papers. Only generate the summary, no other text. User History: {} Answer:",
+        "retrieval_history": "paper title: {title} reference: {citation}"
+    },
+    "news_categorize":{
+        "profile_prompt": "Look at the following past articles this journalist has written and determine the most popular category they write in. Answer in the following form: most popular category: <category>. User History: {} Answer:",
+        "retrieval_history": "article: {text} category: {category}"
+    },
+    "news_headline":{
+        "profile_prompt": "Generate a headline for the following article.\narticle: {} headline:",
+        "retrieval_history": "article: {text} headline: {title}"
+    },
+    "product_rating":{
+        "profile_prompt": "Based on this user’s past reviews, what are the most common scores they give for positive and negative reviews? Answer in the following form: most common positive score: <most common positive score>, most common negative score: <most common negative score>. User History: {} Answer:",
+        "retrieval_history": "review: {text} score: {score}"
+    },
+    "scholarly_title": {
+        "profile_prompt": "Given this author’s previous publications, try to describe a template for their titles. I want to be able to accurately predict the title of one of the papers from the abstract. Only generate the template description, nothing else. User History: {} Answer:",
+        "retrieval_history": "abstract: {abstract} title: {title}"
+    },
+    "tweet_paraphrase":{
+        "profile_prompt": "Given this person’s previous tweets, try to describe a template for their tweets. I want to take a generic sentence and rephrase it to sound like one of their tweets, with the same style/punctuation/capitalization/wording/tone/etc. as them. Only give me the template description, nothing else. User History: {} Answer:",
+        "retrieval_history": "tweet: {text}"
+    }
+}
