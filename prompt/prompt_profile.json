@@ -12,7 +12,7 @@
         "retrieval_history": "article: {text} category: {category}"
     },
     "news_headline":{
-        "profile_prompt": "Generate a headline for the following article.\narticle: {} headline:",
+        "profile_prompt": "Given this author’s previous articles, try to describe a template for their headlines. I want to be able to accurately predict the headline gives one of their articles. Be specific about their style and wording, don’t tell me anything generic. User History: {} Answer:",
         "retrieval_history": "article: {text} headline: {title}"
     },
     "product_rating":{
